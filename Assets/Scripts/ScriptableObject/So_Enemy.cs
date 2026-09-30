@@ -3,10 +3,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "So_Enemy", menuName = "Scriptable Objects/So_Enemy")]
 public class So_Enemy : ScriptableObject
 {
-    private int damage = 2;
-    private int health = 20;
-    private int number = 5;
-    private int speed = 5;
+    [SerializeField] private int damage;
+    [SerializeField] private int health;
+    [SerializeField] private int number;
+    [SerializeField] private int speed;
+
+
+    [SerializeField] private GameObject enemyPrefab;
+    public GameObject EnemyPrefab => enemyPrefab;
 
     private void TakeDMG(int damage)
     {
