@@ -3,10 +3,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "So_Enemy", menuName = "Scriptable Objects/So_Enemy")]
 public class So_Enemy : ScriptableObject
 {
-    private int damage;
-    private int health;
-    private int number;
-    private int speed;
+    private int damage = 2;
+    private int health = 20;
+    private int number = 5;
+    private int speed = 5;
 
     private void TakeDMG(int damage)
     {
